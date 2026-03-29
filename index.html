@@ -7,8 +7,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <title>RAPIDINGO - Delivery</title>
-    <link rel="icon" href="data:,">
-    <link rel="manifest" href="./assets/manifest-GxjNEd7v.json">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3063/3063822.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -33,17 +32,9 @@
       }
     </style>
     <script type="module" crossorigin src="./assets/index-CqXLpChL.js"></script>
-  </head>
+  <link rel="manifest" href="./manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="./registerSW.js"></script></head>
   <body>
     <div id="root"></div>
-    <script>
-      if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-          navigator.serviceWorker.register('sw.js')
-            .then(reg => console.log('SW registrado'))
-            .catch(err => console.log('Error SW', err));
-        });
-      }
-    </script>
+
   </body>
 </html>
